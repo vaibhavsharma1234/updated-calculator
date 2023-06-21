@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Construction Cost Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      #barChart {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Construction Cost Calculator</h2>
+    <div class="calculator">
+      <div class="input-group">
+        <label for="builtupArea">Builtup Area (sqft):</label>
+        <input
+          type="number"
+          id="builtupArea"
+          placeholder="Enter builtup area"
+        />
+      </div>
+      <div class="input-group">
+        <label for="costPerSqft">Cost per sqft ($):</label>
+        <input
+          type="number"
+          id="costPerSqft"
+          placeholder="Enter cost per sqft"
+        />
+      </div>
+      <button onclick="calculateCost()">Calculate</button>
+      <div id="result"></div>
+    </div>
+
+    <div class="charts">
+      <div class="chart-container">
+        <h3>Material Percentages</h3>
+        <canvas id="percentageChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <h3>Material Prices</h3>
+        <canvas id="priceChart"></canvas>
+      </div>
+    </div>
+
+    <div class="material-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Cost</th>
+          </tr>
+        </thead>
+        <tbody id="materialDetails">
+          <!-- Material details will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </div>
+    <div class="charts1">
+      <div class="chart-container1">
+        <h3>COST Percentages</h3>
+        <canvas id="barChart"></canvas>
+      </div>
+    </div>
+
+    <!-- <script>
+      // Get the data from the calculator (replace this with your own data source)
+      const totalCost = 1000 // Total cost in Rs
+      const ratios = [0.219, 0.184, 0.111, 0.169, 0.178, 0.139]
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+
+      // Calculate the cost for each month based on the total cost and ratio
+      const costs = ratios.map((ratio) => Math.round(totalCost * ratio))
+
+      // Create the bar chart
+      const ctx = document.getElementById('barChart').getContext('2d')
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: months,
+          datasets: [
+            {
+              label: 'Cost per Month (Rs)',
+              data: costs,
+              backgroundColor: '#3498db',
+              borderColor: '#3498db',
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                callback: function (value, index, values) {
+                  return value + ' Rs'
+                },
+              },
+            },
+          },
+        },
+      })
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

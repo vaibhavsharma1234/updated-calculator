@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Montserrat&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.calculator {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: 500;
+  color: #666;
+  font-family: 'Montserrat';
+}
+
+/* input[type='number'] {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+} */
+input[type='number'] {
+  border: none;
+  border: 1px solid #e1e1e1;
+  background: #f9f9f9;
+  width: 87%;
+  height: 50px;
+  padding: 15px;
+  color: #000;
+  font-size: 0.923em;
+  /* -webkit-appearance: none; */
+  font-family: 'Montserrat', sans-serif;
+}
+button {
+  background-color: rgba(255, 105, 0, 1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#result {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+}
+.charts1 {
+  margin-top: 30px;
+}
+.chart-container {
+  width: 48%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+.chart-container1 {
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  margin-top: 20px;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+ul {
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.material-label {
+  font-weight: bold;
+}
+
+.material-cost {
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.material-table {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td:first-child {
+  font-weight: bold;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
